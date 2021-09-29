@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(163, 192, 245);
+}
+
+.container {
+    background: #eee;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(20px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+}
+
+.button {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 5rem;
+    align-self: center;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: crimson;
+    cursor: pointer;
+}
