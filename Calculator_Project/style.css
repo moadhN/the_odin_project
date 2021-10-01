@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+:root {
+    --bg-color: #091921;
+    --button-color: #00736C;
+    --bg-calulator: #00434E;
+    --hover-color: #3BA377;
+}
+
+* {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.screen {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.input {
+    padding: 1.5rem 1rem;
+    line-height: 0;
+    background-color: #fff;
+}
+
+.screen {
+    border: .5rem solid #667A86;
+}
+
+/* grid */
+
+.content {
+    margin: 1rem auto;
+    background-color: var(--bg-calulator);
+    width: 300px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: .2rem;
+}
+
+.off-on {
+    grid-column: span 2;
+    background-color: #EE982B;
+}
+
+.header {
+    grid-area: screen;
+}
+
+button {
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
