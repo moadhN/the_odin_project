@@ -41,9 +41,9 @@ body {
 /* grid */
 
 .content {
-    margin: 1rem auto;
+    margin: 4rem auto;
     background-color: var(--bg-calulator);
-    width: 300px;
+    width: 400px;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -52,6 +52,7 @@ body {
 }
 
 .buttons {
+    height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

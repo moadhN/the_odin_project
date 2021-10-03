@@ -21,6 +21,7 @@ let stopWriting = true;
 let writingCount = 0;
 
 
+
 let a = undefined, b = undefined, oper = undefined;
 
 /* off-on */
@@ -69,10 +70,12 @@ function numberInput() {
 
         }
 
+
         writingCount++
         if (writingCount === 10) {
             stopWriting = false
         }
+
     }
 
 }
@@ -102,7 +105,8 @@ function addOperator() {
 }
 
 
-/* delate Number */
+/* delete Number */
+
 del.addEventListener('click', delateNumber)
 
 function delateNumber() {
@@ -122,9 +126,12 @@ function delateNumber() {
 
 
 clearButton.addEventListener('click', clearScreen)
+
 function clearScreen() {
+    operators.forEach(item => item.style.background = '')//clear operator style
     if (offBoolean) {
         input.textContent = '0'
+
         a = undefined, b = undefined;
         clearBoolean = true;
         operatorOpern = true;
