@@ -1,0 +1,80 @@
+html {
+    background: linear-gradient(90deg, rgba(194, 229, 224, 1) 49%, rgba(252, 193, 193, 1) 51%);
+    ;
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+    background-image: radial-gradient(circle at center, black 5px, transparent 6px), radial-gradient(circle at center, white 50%, transparent 50%, transparent 65%, white 65%), linear-gradient(to right, transparent 50%, #507D9C 50%, transparent 51%), linear-gradient(to bottom, transparent 50%, #507D9C 50%, transparent 51%), linear-gradient(-30deg, transparent 50%, #507D9C 50%, transparent 51%), linear-gradient(30deg, transparent 50%, #507D9C 50%, transparent 51%), linear-gradient(60deg, transparent 50%, #507D9C 50%, transparent 51%), linear-gradient(-60deg, transparent 50%, #507D9C 50%, transparent 51%);
+    border-width: 24px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, rgba(252, 193, 193, 1) 51%, rgba(194, 229, 224, 1) 49%);
+    border-image-slice: 1;
+}
+
+.hand {
+    height: 50%;
+    right: 50%;
+    width: 6px;
+    background: black;
+    position: absolute;
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: all .02s cubic-bezier(.36, 2.61, .22, 1.46);
+    -webkit-transition: all .02s cubic-bezier(.36, 2.61, .22, 1.46);
+    -moz-transition: all .02s cubic-bezier(.36, 2.61, .22, 1.46);
+    -ms-transition: all .02s cubic-bezier(.36, 2.61, .22, 1.46);
+    -o-transition: all .02s cubic-bezier(.36, 2.61, .22, 1.46);
+    -webkit-transform: rotate(0deg);
+}
+
+.second-hand {
+    width: 1px;
+    top: 15%;
+    height: 35%;
+}
+
+.min-hand {
+    top: 15%;
+    height: 35%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.hour-hand {
+    top: 20%;
+    height: 30%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
