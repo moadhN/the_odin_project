@@ -5,7 +5,10 @@ const strArray = [];
 function checkSecretCode(e) {
     strArray.push(e.key)
     if (strArray.join('').match(regex)) {
-        return alert('DING DING'), window.location.reload()
+        strArray.splice(0)
+        return alert('DING DING'), cornify_add(), setTimeout(() => {
+            window.location.reload()
+        }, 2000);
 
     }
 }
